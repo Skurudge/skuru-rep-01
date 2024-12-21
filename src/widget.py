@@ -2,6 +2,7 @@ from src.masks import get_mask_card_number, get_mask_account
 
 
 def mask_account_card(account_card: str) -> str:
+    """Принимает на вход строку, содержащую тип и номер карты или счета и возвращает строку с замаскированным номером"""
     full_number = account_card.split()[-1]
     masked_number = ""
     if len(full_number) == 16:
