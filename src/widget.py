@@ -13,13 +13,6 @@ def mask_account_card(account_card: str) -> str:
     masked_account_card = account_card.replace(full_number, masked_number)
     return masked_account_card
 
-a1 = mask_account_card("Visa Classic 6831982476737658")
-a2 = mask_account_card("Счет 73654108430135874305")
-a3 = mask_account_card("MasterCard 7158300734726758")
-
-print(a1)
-print(a2)
-print(a3)
 
 def get_date(complex_format_date: str) -> str:
     """Принимает строку с датой в длинном форме, возвращает строку с датой в формате ДД.ММ.ГГГГ"""
