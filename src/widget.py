@@ -21,5 +21,8 @@ print(a1)
 print(a2)
 print(a3)
 
-
+def get_date(complex_format_date: str) -> str:
+    """Принимает строку с датой в длинном форме, возвращает строку с датой в формате ДД.ММ.ГГГГ"""
+    simple_format_date = complex_format_date[8:10] + "." + complex_format_date[5:7] + "." + complex_format_date[:4]
+    return simple_format_date
 
