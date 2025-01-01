@@ -1,6 +1,6 @@
-def get_mask_card_number(card_number: int) -> str:
+def get_mask_card_number(card_number: int | bool | list | dict | None | str) -> str:
     """Принимает на вход номер карты в виде числа и возвращает ее маску"""
-    if type(card_number) != int or len(str(card_number)) != 16 or card_number <= 0:
+    if type(card_number) is not int or len(str(card_number)) != 16 or card_number <= 0:
         raise Exception("Неверное значение card_number!")
     else:
         adding_first = " "
@@ -19,9 +19,9 @@ def get_mask_card_number(card_number: int) -> str:
         return card_number_masked
 
 
-def get_mask_account(account: int) -> str:
+def get_mask_account(account: int | bool | list | dict | None | str) -> str:
     """Принимает на вход номер счета в виде числа и возвращает его маску"""
-    if type(account) != int or len(str(account)) != 20 or account <= 0:
+    if type(account) is not int or len(str(account)) != 20 or account <= 0:
         raise Exception("Неверное значение account!")
     else:
         adding_second = "*"
