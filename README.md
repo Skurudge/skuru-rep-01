@@ -108,7 +108,7 @@ state, заданному по умолчанию [test_filter_by_state_fixture]
 убывания и возрастания [test_sort_by_date_fixture](tests/test_processing.py). Проведена проверка корректности 
 сортировки при одинаковых датах [test_sort_by_date_same_date](tests/test_processing.py). Тесты на работу функции 
 с некорректными / неполными или нестандартными форматами дат (для использованных в тестировании примеров) дают 
-ожидаемый выход:[test_sort_by_date_except](tests/test_processing.py).
+ожидаемый выход: [test_sort_by_date_except](tests/test_processing.py).
 
 ## Документация:
 
