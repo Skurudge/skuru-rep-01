@@ -1,0 +1,18 @@
+
+
+example_fun ERROR (division by zero), inputs: (3, 3)
+example_fun STOP
+example_fun OK, result: 2.0
+example_fun STOP
+example_fun OK, result: 2.5
+example_fun STOP
+example_fun ERROR (division by zero), inputs: (3, 3)
+example_fun STOP
+example_fun OK, result: 2.0
+example_fun STOP
+example_fun OK, result: 2.5
+example_fun STOP
+example_fun ERROR (division by zero), inputs: (3, 3)
+example_fun STOP
+example_fun OK, result: 2.0
+example_fun STOP
