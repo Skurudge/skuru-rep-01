@@ -7,8 +7,18 @@ def mask_account_card(account_card: int | bool | list | dict | None | str) -> st
         raise Exception("Неверное значение на входе функции!")
     else:
         full_number = account_card.split()[-1]
-        group_of_number = account_card.split()[0]
-        if len(full_number) == 16 and group_of_number in ["Maestro", "MasterCard", "Visa"]:
+        group_of_number = " ".join(account_card.split()[:-1])
+        if len(full_number) == 16 and group_of_number in [
+            "Maestro",
+            "MasterCard",
+            "Visa",
+            "Visa Gold",
+            "Visa Classic",
+            "Visa Platinum",
+            "Discover",
+            "American Express",
+            "МИР",
+        ]:
             masked_number = get_mask_card_number(int(full_number))
         elif len(full_number) == 20 and group_of_number == "Счет":
             masked_number = get_mask_account(int(full_number))
