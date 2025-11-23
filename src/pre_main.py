@@ -33,11 +33,7 @@ def choice_data() -> list[int | list[dict]]:
                     my_choice_index = 2
                     break
 
-    my_path_choice = {
-        1: "E:/PythonProject/data/operations.json",
-        2: "E:/PythonProject/data/transactions.csv",
-        3: "E:/PythonProject/data/transactions_excel.xlsx",
-    }
+    my_path_choice = {1: "data/operations.json", 2: "data/transactions.csv", 3: "data/transactions_excel.xlsx"}
     my_choice_data = []
     pass_name = str(my_path_choice.get(my_choice_index))
     match my_choice_index:
