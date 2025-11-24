@@ -85,3 +85,8 @@ def main() -> list[dict]:
         print()
 
     return my_aimed_list
+
+
+# блок для ручного запуска
+if __name__ == "__main__":
+    main()
