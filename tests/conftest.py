@@ -95,3 +95,55 @@ def transactions() -> list[dict]:
             "to": "Счет 14211924144426031657",
         },
     ]
+
+
+@pytest.fixture
+def my_transact() -> list[dict]:
+    sample_list_of_dict = [
+        {
+            "currency_code": "RUB",
+            "state": "CANCELED",
+            "info": 200.55,
+            "date": "2025-05-01",
+            "operationAmount": {"amount": "8221.37", "currency": {"name": "RUB", "code": "RUB"}},
+            "result": 20,
+            "description": "Перевод со счета на счет",
+        },
+        {
+            "currency_code": "RUB",
+            "state": "CANCELED",
+            "info": 502.77,
+            "date": "2025-02-01",
+            "operationAmount": {"amount": "8221.37", "currency": {"name": "RUB", "code": "RUB"}},
+            "result": 77,
+            "description": "Открытие вклада",
+        },
+        {
+            "currency_code": "USD",
+            "state": "EXECUTED",
+            "info": 1000.75,
+            "date": "2025-03-01",
+            "operationAmount": {"amount": "8221.37", "currency": {"name": "USD", "code": "USD"}},
+            "result": 90,
+            "description": "Прочее",
+        },
+        {
+            "currency_code": "RUB",
+            "state": "CANCELED",
+            "info": 25.42,
+            "date": "2024-04-01",
+            "operationAmount": {"amount": "8221.37", "currency": {"name": "RUB", "code": "RUB"}},
+            "result": 55,
+            "description": "Перевод со счета на счет",
+        },
+        {
+            "currency_code": "RUB",
+            "state": "PENDING",
+            "info": 52.99,
+            "date": "2025-05-01",
+            "operationAmount": {"amount": "8221.37", "currency": {"name": "RUB", "code": "RUB"}},
+            "result": 31,
+            "description": "Прочее",
+        },
+    ]
+    return sample_list_of_dict
